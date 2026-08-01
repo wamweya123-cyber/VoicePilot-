@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-  accessibility_service_config.xml
-  Typical Android AccessibilityService configuration file.
-  Modify packageNames, settingsActivity, and description reference as needed for your app.
--->
-<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
-    android:accessibilityEventTypes="typeWindowStateChanged|typeWindowContentChanged|typeViewClicked|typeViewFocused"
-    android:packageNames=""
+
+<accessibility-service
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/accessibility_service_description"
+    android:accessibilityEventTypes="typeViewClicked|typeViewFocused"
     android:accessibilityFeedbackType="feedbackSpoken"
     android:notificationTimeout="100"
-    android:canRetrieveWindowContent="true"
-    android:settingsActivity=".SettingsActivity"
-    android:description="@string/accessibility_service_description"
-    android:accessibilityFlags="flagDefault" />
+    android:canRetrieveWindowContent="true" />
