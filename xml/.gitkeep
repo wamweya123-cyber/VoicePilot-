@@ -1,0 +1,3 @@
+# Keep the xml directory in the repository
+
+This file ensures the xml directory is tracked by Git.
